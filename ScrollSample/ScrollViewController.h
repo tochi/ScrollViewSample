@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ScrollViewController.h
 //  ScrollSample
 //
 //  Created by tochi on 12/04/17.
@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ScrollViewController.h"
 
-@interface ViewController : UIViewController
+@interface ScrollViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @end

@@ -2,7 +2,7 @@
 //  ViewController.m
 //  ScrollSample
 //
-//  Created by 智行 栩平 on 12/04/17.
+//  Created by tochi on 12/04/17.
 //  Copyright (c) 2012年 aguuu Inc. All rights reserved.
 //
 
@@ -16,19 +16,19 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+  [super viewDidLoad];
+
+  ScrollViewController *scrollViewController;
+  scrollViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ScrollViewController"];
+  scrollViewController.view.frame = CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height);
+  scrollViewController.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, 800.0);
+  [self addChildViewController:scrollViewController];
+  [self.view addSubview:scrollViewController.view];
 }
 
 - (void)viewDidUnload
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-}
+  [super viewDidUnload];
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-  return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
-
 @end

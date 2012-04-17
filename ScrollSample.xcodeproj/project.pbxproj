@@ -15,6 +15,7 @@
 		D94A8B14153D59F700838812 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D94A8B13153D59F700838812 /* AppDelegate.m */; };
 		D94A8B17153D59F700838812 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94A8B15153D59F700838812 /* MainStoryboard.storyboard */; };
 		D94A8B1A153D59F700838812 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94A8B19153D59F700838812 /* ViewController.m */; };
+		D94A8B2E153D5E8D00838812 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D94A8B2D153D5E8D00838812 /* ScrollViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,17 @@
 		D94A8B03153D59F700838812 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D94A8B05153D59F700838812 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D94A8B07153D59F700838812 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D94A8B0B153D59F700838812 /* ScrollSample-Info.plist */ = {isa = PBXFileReference; path = "ScrollSample-Info.plist"; sourceTree = "<group>"; };
+		D94A8B0B153D59F700838812 /* ScrollSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScrollSample-Info.plist"; sourceTree = "<group>"; };
 		D94A8B0D153D59F700838812 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D94A8B0F153D59F700838812 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D94A8B11153D59F700838812 /* ScrollSample-Prefix.pch */ = {isa = PBXFileReference; path = "ScrollSample-Prefix.pch"; sourceTree = "<group>"; };
-		D94A8B12153D59F700838812 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
-		D94A8B13153D59F700838812 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D94A8B0F153D59F700838812 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		D94A8B11153D59F700838812 /* ScrollSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScrollSample-Prefix.pch"; sourceTree = "<group>"; };
+		D94A8B12153D59F700838812 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		D94A8B13153D59F700838812 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		D94A8B16153D59F700838812 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		D94A8B18153D59F700838812 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		D94A8B19153D59F700838812 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D94A8B18153D59F700838812 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		D94A8B19153D59F700838812 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		D94A8B2C153D5E8D00838812 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		D94A8B2D153D5E8D00838812 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				D94A8B15153D59F700838812 /* MainStoryboard.storyboard */,
 				D94A8B18153D59F700838812 /* ViewController.h */,
 				D94A8B19153D59F700838812 /* ViewController.m */,
+				D94A8B2C153D5E8D00838812 /* ScrollViewController.h */,
+				D94A8B2D153D5E8D00838812 /* ScrollViewController.m */,
 				D94A8B0A153D59F700838812 /* Supporting Files */,
 			);
 			path = ScrollSample;
@@ -164,6 +169,7 @@
 				D94A8B10153D59F700838812 /* main.m in Sources */,
 				D94A8B14153D59F700838812 /* AppDelegate.m in Sources */,
 				D94A8B1A153D59F700838812 /* ViewController.m in Sources */,
+				D94A8B2E153D5E8D00838812 /* ScrollViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
